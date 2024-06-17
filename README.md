@@ -12,3 +12,4 @@
 - **mako** - notification manager 
 - **wofi** - app launcher
 - **waybar** - fancy status bar
+- **catppucin** - cool color scheme
