@@ -1,0 +1,29 @@
+* {
+    font-family: 'Fira Code Nerd Font';
+    font-size: 15px;
+    color: #ffffff;
+}
+
+@define-color bg #1e1e2e;
+@define-color fg #cdd6f4;
+@define-color accent #cba6f7;
+@define-color surface #313244;
+
+window#waybar {
+    background-color: @bg;
+	border-radius: 10px;	
+	border: 2px solid @accent;
+}
+#custom-search,
+#clock,
+#battery,
+#language,
+#pulseaudio,
+#window {
+	padding: 0em 0.7em;
+	background-color: @surface;
+	border-radius: 4px;	
+	margin: 0.5em 0;
+}
+#clock { margin-right: 0.5em; }
+#custom-search { margin-left: 0.5em; }

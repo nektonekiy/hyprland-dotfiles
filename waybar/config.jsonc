@@ -1,0 +1,81 @@
+{
+	"position": "bottom",
+    "min-height": 30,
+    "spacing": 5,
+	"margin-bottom": 15,
+	"margin-left": 15, 
+	"margin-right": 15,
+	"margin-top": 3,
+    "modules-left": [
+		"custom/search",
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "hyprland/language",
+        "battery",
+        "clock"
+    ],
+	"custom/search": {
+		"format": " ",
+		"on-click": "exec wofi --show drun",
+		"tooltip": false
+	},
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{name} {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "en",
+		"format-ru": "ru",
+	},
+	"hyprland/window": {
+    "format": "{}",
+    "rewrite": {
+        "": "hyprland"
+    },
+    "separate-outputs": true
+	},
+    "clock": {
+        "format": "{:%H:%M:%S}"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": [" ", " ", " ", " ", " "]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": "  {icon} {format_source}",
+        "format-muted": "  {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": " ",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    }
+}
