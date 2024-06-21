@@ -8,7 +8,7 @@ compinit
 zstyle ':completion:*' menu select
 
 # connect plugins
-export ZSHPLUG=/home/maxim/.zsh-plugins
+export ZSHPLUG=~/.zsh-plugins
 source $ZSHPLUG/geometry/geometry.zsh
 source $ZSHPLUG/autosuggestions/zsh-autosuggestions.zsh
 source $ZSHPLUG/syntax/zsh-syntax-highlighting.zsh
@@ -19,9 +19,8 @@ GEOMETRY_PROMPT=(geometry_path)
 GEOMETRY_RPROMPT+=(geometry_exec_time)
 
 # aliases
-alias fetch=$ZSHPLUG/fetch
 alias ls=lsd
 alias cat=bat
+
 # autoload
-fetch
 echo -ne '\e[5 q'
