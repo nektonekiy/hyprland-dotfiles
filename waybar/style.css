@@ -1,17 +1,17 @@
+@define-color bg #eff1f5;
+@define-color fg #4c4f69;
+@define-color accent #8839ef;
+@define-color surface #ccd0da;
+
 * {
     font-family: 'Fira Code Nerd Font';
     font-size: 15px;
-    color: #ffffff;
+    color: @fg;
 }
-
-@define-color bg #1e1e2e;
-@define-color fg #cdd6f4;
-@define-color accent #cba6f7;
-@define-color surface #313244;
 
 window#waybar {
     background-color: @bg;
-	border-radius: 6px ;
+	border-radius: 6px;
 }
 #custom-search,
 #clock,
