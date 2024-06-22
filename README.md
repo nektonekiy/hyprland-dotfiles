@@ -6,6 +6,7 @@
 - **alacritty** - terminal
 - **zsh** - shell
 - **nvim** - editor
+- **zathura** - perfect pdf reader
 - **lf** - file manager
 - **bat** - cat alternative with syntax highlighting
 - **hyprpaper** - wallpaper manager
