@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# random wallpaper script
+function setPicture() {
+	read -r -a wallpaperList <<< "$(ls ~/.wallpaper/* | shuf | tr '\n' ' ')";
+	echo "unfiltered\n${wallpaperList[@]}"
+	lastWallpaper="$(readlink -f ~/.walsearchlpaper.jpg)";
+	wallpaperList=( "${wallpaperList[@]/"$lastWallpaper"/}" );
+	echo "filtered\n${wallpaperList[@]}"
+	wallpaperChosen="${wallpaperList[0]}"
+	echo "chsoen\n$wallpaperChosen"
+	ln -sf "$wallpaperChosen" ~/.wallpaper.jpg;
+}
+
+setPicture;
+pkill hyprpaper;
+nohup hyprpaper &>/dev/null &
