@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# autostart script
+
+# desktop componentes
+/usr/libexec/polkit-mate-authentication-agent-1 &
+waybar &
+mako &
+~/.local/bin/randomWallpaper
+
+# my favorite apps
+obsidian &
+google-chrome-stable &
+alacritty &
