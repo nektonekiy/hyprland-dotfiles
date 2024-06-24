@@ -2,23 +2,19 @@
 	"position": "bottom",
     "min-height": 30,
     "spacing": 5,
-	"margin-bottom": 10,
-	"margin-left": 10, 
-	"margin-right": 10,
-	"margin-top": 2,
     "modules-left": [
-		"custom/search",
         "hyprland/window"
     ],
     "modules-right": [
         "pulseaudio",
+		"custom/random-wallpaper",
         "hyprland/language",
         "battery",
         "clock"
     ],
-	"custom/search": {
-		"format": " ",
-		"on-click": "exec wofi --show drun",
+	"custom/random-wallpaper": {
+		"format": "󰢵 ",
+		"on-click": "exec .local/bin/randomWallpaper",
 		"tooltip": false
 	},
     "keyboard-state": {
