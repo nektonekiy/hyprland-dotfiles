@@ -1,0 +1,25 @@
+@define-color bg #1e1e1e;
+@define-color fg #ffffff;
+@define-color border #454545;
+
+* {
+    font-family: 'Fira Code Nerd Font';
+    font-size: 15px;
+    color: @fg;
+}
+
+window#waybar {
+    background-color: @bg;
+	border-radius: 6px;
+	border: 1px solid @border;
+	padding: 10px 0px;
+}
+#clock,
+#battery,
+#language,
+#pulseaudio,
+#window {
+	margin: 3px;
+}
+#clock { margin-left: 2em; }
+#battery { margin-right: 2em; }

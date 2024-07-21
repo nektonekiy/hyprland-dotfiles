@@ -1,22 +1,24 @@
 {
 	"position": "bottom",
-    "min-height": 30,
+    "min-height": 40,
     "spacing": 5,
-    "modules-left": [
+	"width": 800,
+	"margin-left": 10,
+	"margin-right": 10,
+	"margin-top": 0,
+	"margin-bottom": 10,
+	"modules-left" : [
+		"clock"
+	],
+    "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
         "pulseaudio",
 		"custom/random-wallpaper",
         "hyprland/language",
-        "battery",
-        "clock"
+        "battery"
     ],
-	"custom/random-wallpaper": {
-		"format": "󰢵 ",
-		"on-click": "exec .local/bin/randomWallpaper",
-		"tooltip": false
-	},
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -34,7 +36,10 @@
 	"hyprland/window": {
     "format": "{}",
     "rewrite": {
-        "": "hyprland"
+        "": "desktop",
+		"Alacritty": "terminal",
+	   "(.*) — Mozilla Firefox": "web",
+	   "(.*) - Obsidian (.*)": "notes",
     },
     "separate-outputs": true
 	},

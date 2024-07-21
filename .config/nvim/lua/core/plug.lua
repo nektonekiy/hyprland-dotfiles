@@ -22,12 +22,12 @@ require("lazy").setup({
 	'prichrd/netrw.nvim',
 	'hrsh7th/cmp-cmdline',
 	'hrsh7th/cmp-nvim-lsp',
+	'Mofiqul/adwaita.nvim',
 	'voldikss/vim-floaterm',
 	'neovim/nvim-lspconfig',
 	'preservim/nerdcommenter',
    	'kyazdani42/nvim-web-devicons',
 	'nvim-treesitter/nvim-treesitter',
-	{ "catppuccin/nvim", name = "catppuccin"},
 	{'nvim-telescope/telescope.nvim', tag = '0.1.6', dependencies = 'nvim-lua/plenary.nvim'},
 	{
 		'nvimdev/dashboard-nvim',

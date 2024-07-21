@@ -1,14 +1,14 @@
 #!/bin/bash
 
-# autostart script
+# hyprland autostart script
+# nekto nekiy
 
 # desktop componentes
 /usr/libexec/polkit-mate-authentication-agent-1 &
 waybar &
 mako &
-~/.local/bin/randomWallpaper
 
 # my favorite apps
-obsidian &
-google-chrome-stable &
 alacritty &
+obsidian &
+firefox &
