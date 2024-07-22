@@ -1,4 +1,3 @@
-# catppucin|hyprland dotfiles
 ## preview
 ![image](preview.png)
 ## software
